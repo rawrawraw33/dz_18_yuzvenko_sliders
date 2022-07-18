@@ -11,9 +11,29 @@ a {
     text-decoration: none;
 }
 .index_container{
-    
+    margin: 50px auto;
+    text-align: center;
     border: 1px solid gray;
     width:500px ;
     background-color: bisque;
     
+}
+.zoom{
+    display: flex;
+    justify-content: center;  
+}
+.loupe{
+    background-color: #555;
+    background: rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(0, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    transform: scale(2);
+    width:100%;
+}
+
+#demo-2 {
+    background: transparent;
+    margin-right: 20px;
 }

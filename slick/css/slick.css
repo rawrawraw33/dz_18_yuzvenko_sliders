@@ -5,6 +5,12 @@
     box-sizing: border-box;
     
 }
+.loupe {
+    background-color: #555;
+    background: rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(0, 0, 0, 0);
+    cursor: url(blank.png), url(blank.cur), none;
+}
 /* стили для демонстрации */
 html , body{
     /* height: 100%; */
@@ -23,10 +29,7 @@ html , body{
     margin: 0 auto;
     
 }
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
+
 /* Ограничивающая оболочка */
 .slick-list {
     overflow: hidden;
@@ -41,14 +44,7 @@ html , body{
     margin: 0 auto;
 }
 
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
+
 /* Стрелка */
 .slick-arrow{
     position: absolute;
@@ -127,6 +123,16 @@ html , body{
 .back a{
     text-decoration: none;
 }
+
+.loupe {
+    background-color: #555;
+    background: rgba(0, 0, 0, 0.25);
+    border: 5px solid rgba(0, 0, 0, 0);
+    cursor: url(blank.png), url(blank.cur), none;
+}
+
+
+
 @media screen and (max-width:480px){
     .slider__item { 
         text-align: center;
