@@ -4,8 +4,6 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" maximum-scale="1.0 , minimum-scale=1.0"> 
-        
-        
         <link rel="stylesheet" type="text/css" href="css/owl.css"/>
         <link rel="stylesheet" href="css/owl.carousel.min.css">
         <link href="css/lightbox.min.css" rel="stylesheet" />
@@ -24,20 +22,21 @@
 
         <title>Owl</title>
     </head>
-    <body>
+    <body style='overflow-x:hidden;'>
         <h1>Models</h1>
         <!-- Set up your HTML -->
         <div class="owl-carousel owl-theme">
-            <div class="item"> <a href="img/owl-logo-1.png" data-lightbox="roadtrip"><img src="img/owl-logo-1.png" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-2.jpg" data-lightbox="roadtrip"><img src="img/owl-logo-2.jpg" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-3.jpg" data-lightbox="roadtrip"><img src="img/owl-logo-3.jpg"  class="demo-2"alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-4.jpg" data-lightbox="roadtrip"><img src="img/owl-logo-4.jpg" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-5.png" data-lightbox="roadtrip"><img src="img/owl-logo-5.png" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-6.png" data-lightbox="roadtrip"><img src="img/owl-logo-6.png" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-7.png" data-lightbox="roadtrip"><img src="img/owl-logo-7.png" class="demo-2" alt=""></a> </div>
-            <div class="item"> <a href="img/owl-logo-8.png" data-lightbox="roadtrip"><img src="img/owl-logo-8.png" class="demo-2" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-1.png" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-1.png" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-2.jpg" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-2.jpg" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-3.jpg" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-3.jpg" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-4.jpg" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-4.jpg" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-5.png" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-5.png" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-6.png" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-6.png" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-7.png" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-7.png" alt=""></a> </div>
+            <div class="item"> <a href="img/owl-logo-8.png" data-lightbox="roadtrip"><img class="demo-2" src="img/owl-logo-8.png" alt=""></a> </div>
             
         </div>
+        
         <div class="back"><a href="../index.html" target="_blank">Back</a></div>
         <script>
             $(document).ready(function(){
@@ -67,29 +66,29 @@
                 items:3,
                 loop:true,
                 margin:10,
-                autoplay:true,
+                autoplay:false,
                 autoplayTimeout:3000,
                 autoplayHoverPause:true
             });
             
         </script>
-        <script>
-            $('.demo-2').loupe();
-            lightbox.option({
-              'resizeDuration': 200,
-              'wrapAround': true,
-              'alwaysShowNavOnTouchDevices':true,
-            })
-        </script>
-        <script>
-            $('selector').loupe({
-                width: 200, // width of magnifier
-                height: 150, // height of magnifier
-                loupe: 'loupe' // css class for magnifier
-                });
-        </script>
-        <script src="js/lightbox.js"></script>
         
+        
+        <script src="js/lightbox.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.demo-2').loupe({
+                    width: 100, // width of magnifier
+                    height: 100, // height of magnifier
+                    loupe: 'loupe' // css class for magnifier
+                });
+                
+                
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.loupe.min.js"></script>
+            
     
     
     </body>
