@@ -38,27 +38,7 @@
         </div>
         
         <div class="back"><a href="../index.html" target="_blank">Back</a></div>
-        <script>
-            $(document).ready(function(){
-                $(".owl-carousel").owlCarousel({
-                    loop:true,
-                    autoplayHoverPause:false,
-                    margin:10,
-                    nav:true,
-                    responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:3
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-                });
-            });
-        </script>
+
         
         <script>
             var owl = $('.owl-carousel');
@@ -68,7 +48,21 @@
                 margin:10,
                 autoplay:false,
                 autoplayTimeout:3000,
-                autoplayHoverPause:true
+                autoplayHoverPause:true,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        
+                    },
+                    600:{
+                        items:3,
+                        
+                    },
+                    1000:{
+                        items:3,
+                    }
+                }
             });
             
         </script>
